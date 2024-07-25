@@ -1,28 +1,29 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-}
 
 .header {
-    width: 1170px;
+    width: 100%;
+    max-width: 1170px;
     height: 100px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 215px;
-    margin-left: -50px;
+    padding: 0 20px; 
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
 
+
 .logo-nav {
-    width: 512.86px;
-    height: 35px;
     display: flex;
     align-items: center;
+    flex-grow: 1; 
 }
 
 .logo {
     display: flex;
     align-items: center;
+    margin-right: 20px;
 }
 
 .logo img:first-child {
@@ -40,9 +41,9 @@ body {
 }
 
 .nav {
-    position: absolute;
-    top: 37px;
-    left: 379.86px; 
+    display: flex;
+    flex-grow: 1; 
+    justify-content: center; 
 }
 
 .nav ul {
@@ -75,15 +76,17 @@ body {
     width: 210px;
     height: 60px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    text-align: center;
+    padding: 10px; 
     border-radius: 50px;
     border: 1px solid #9C69E2;
     color: #212353;
     cursor: pointer;
     position: relative;
     transition: background-color 0.3s;
+    margin-left: 20px;
+    flex-shrink: 0;
 }
 
 .request-demo:hover {
@@ -102,6 +105,7 @@ body {
     line-height: 25.6px;
     letter-spacing: 0.5%;
     transition: color 0.3s;
+    margin-left: 20px;
 }
 
 .arrow {
@@ -116,4 +120,135 @@ body {
 
 .request-demo:hover .arrow {
     filter: brightness(0) invert(1);
+}
+
+
+/* Основные стили для body */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Стили для контейнера */
+.container {
+    width: 1171px;
+    height: 489px;
+    margin: 50px auto; /* Центрируем контейнер на странице */
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden; /* Устраняет горизонтальный скроллинг */
+}
+
+/* Стили для текстовой секции */
+.text-section {
+    width: 601px;
+    height: 177px;
+    position: absolute;
+    top: 50px; /* Скорректировано */
+    left: 50px; /* Скорректировано */
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 88px;
+    color: #212353;
+}
+
+/* Стили для секции с изображением */
+.image-section {
+    width: 640px; /* Скорректировано */
+    height: 390px; /* Скорректировано */
+    position: absolute;
+    top: 80px; /* Скорректировано */
+    left: 520px; /* Скорректировано */
+    overflow: hidden;
+}
+
+/* Стили для описательной секции */
+.description-section {
+    width: 370px;
+    height: 117px;
+    position: absolute;
+    top: 250px; /* Скорректировано */
+    left: 50px; /* Скорректировано */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28.8px;
+    color: #4B5D68;
+}
+
+/* Стили для кнопки */
+.learn-more-button {
+    width: 210px;
+    height: 60px;
+    position: absolute;
+    top: 400px; /* Скорректировано */
+    left: 50px; /* Скорректировано */
+    border-radius: 50px;
+    border: 1px solid #9C69E2;
+    background-color: #9C69E2;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28.8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn-more-button:hover {
+    background-color: #8A40EE;
+}
+
+
+
+
+
+/* Стили для экрана планшета */
+@media screen and (max-width: 768px) { 
+    .header {
+        flex-direction: column; 
+        height: auto; 
+        padding: 10px 20px;
+    }
+    .logo-nav {
+        flex-direction: column; 
+        align-items: center;
+        width: 100%; 
+    }
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px; 
+    }
+    .nav {
+        order: 2; 
+        width: 100%; 
+        justify-content: center;
+        margin-top: 10px; 
+    }
+    .request-demo {
+        order: 3; 
+        width: 100%;
+        height: auto;
+        font-size: 14px;
+        padding: 10px 0; 
+        margin-top: 10px; 
+    }
+}
+
+/* Стили для экрана мобильного телефона */
+@media screen and (max-width: 576px) {
+    .nav a {
+        font-size: 14px; 
+    }
+    .request-demo {
+        font-size: 12px; 
+    }
 }
