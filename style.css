@@ -552,18 +552,18 @@ body {
     transition: background-color 0.3s;
 }
 
-.learn-more {
+.learn-more-footer {
     background-color: #F063B8;
     color: #FFFFFF;
     border: 1px solid #F063B8;
 }
 
-.learn-more:hover {
+.learn-more-footer:hover {
     background-color: #EB4BAB;
 }
 
 .request-demo {
-    background-color: #FFFFFF;
+    background-color: #FFFFFF;  
     color: #120c1a;
     border: 1px solid #9C69E2;
     display: flex;
