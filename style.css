@@ -122,34 +122,28 @@
     filter: brightness(0) invert(1);
 }
 
-/* Основные стили для body */
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #f9f9f9;
+ 
 }
-
-
 
 /* Стили для первого контейнера */
 .container {
     width: 100%;
     max-width: 1171px;
     height: auto;
-    margin: 50px auto; /* Центрируем контейнер на странице */
+    margin: 50px auto; 
     position: relative;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     box-sizing: border-box;
-    overflow: hidden; /* Устраняет горизонтальный скроллинг */
+    overflow: hidden; 
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
-/* Стили для текстовой секции */
 .text-section {
     width: 100%;
     max-width: 600px;
@@ -162,7 +156,6 @@ body {
     text-align: auto;
 }
 
-/* Стили для секции с изображением */
 .image-section {
     width: 100%;
     max-width: 600px;
@@ -177,7 +170,7 @@ body {
     object-fit: cover;
 }
 
-/* Стили для описательной секции */
+
 .description-section {
     width: 100%;
     max-width: 370px;
@@ -190,7 +183,6 @@ body {
     text-align: auto;
 }
 
-/* Стили для кнопки */
 .learn-more-button {
     width: 100%;
     max-width: 210px;
@@ -220,20 +212,19 @@ body {
     width: 100%;
     max-width: 1170px;
     height: auto;
-    margin: 50px auto; /* Центрируем контейнер на странице */
+    margin: 50px auto; 
     position: relative;
     background-color: #FDE8F5;
     border-radius: 50px;
     padding: 20px;
     box-sizing: border-box;
-    overflow: hidden; /* Устраняет горизонтальный скроллинг */
+    overflow: hidden; 
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
-/* Стили для секции с изображением */
 .image-section-2 {
     width: 100%;
     max-width: 400px;
@@ -248,7 +239,6 @@ body {
     object-fit: cover;
 }
 
-/* Стили для текстовой секции */
 .text-section-2 {
     width: 100%;
     max-width: 500px;
@@ -256,7 +246,6 @@ body {
     text-align: left;
 }
 
-/* Стили для заголовка */
 .header-section {
     width: 100%;
     font-family: 'Work Sans', sans-serif;
@@ -267,7 +256,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Стили для основного текста */
 .main-text-section {
     width: 100%;
     height: auto;
@@ -284,16 +272,15 @@ body {
     width: 100%;
     max-width: 1170px;
     height: auto;
-    margin: 50px auto; /* Центрируем контейнер на странице */
+    margin: 50px auto; 
     position: relative;
-    background-color: #ffffff; /* colors/blue-light */
+    background-color: #ffffff; 
     padding: 20px;
     box-sizing: border-box;
-    overflow: hidden; /* Устраняет горизонтальный скроллинг */
+    overflow: hidden; 
     text-align: center;
 }
 
-/* Стили для заголовка Features */
 .features-header {
     width: 100%;
     max-width: 200px;
@@ -306,7 +293,6 @@ body {
     color: #212353;
 }
 
-/* Стили для текста под заголовком */
 .features-text {
     width: 100%;
     max-width: 638px;
@@ -319,7 +305,6 @@ body {
     color: #4B5D68;
 }
 
-/* Главная секция */
 .main-section {
     display: flex;
     flex-wrap: wrap;
@@ -328,10 +313,9 @@ body {
     margin-top: 40px;
 }
 
-/* Стили для карточки фичи */
 .feature-card {
     position: relative;
-    width: calc(50% - 40px); /* Ширина карточки для двух в ряду */
+    width: calc(50% - 40px); 
     max-width: 330px;
     height: 250px;
     margin: 20px;
@@ -419,6 +403,336 @@ body {
     width: 16px;
     height: 12px;
     margin-left: 10px;
+}
+
+
+.container-4 {
+    width: 1100px;
+    height: 580px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #aac3f1; 
+    border-radius: 30px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.testimonials-header {
+    width: 100%;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #4B5D68;
+    margin-bottom: 50px; 
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 465px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.card .card-header {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.card .card-header .name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25.6px;
+    color: #212353;
+    text-align: left;
+}
+
+.card .card-header .website {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22.4px;
+    letter-spacing: 1%;
+    color: #9C69E2;
+    text-align: left;
+    
+}
+
+.card .card-header .website a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.card .card-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    color: #4B5D68;
+    text-align: left;
+}
+
+.footer {
+    width: 1170px;
+    height: 570px;
+    margin: 50px auto 0; 
+  
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.footer-text {
+    width: 370px;
+    height: 90px;
+}
+
+.footer-title {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #212353;
+}
+
+.footer-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28.8px;
+    color: #4B5D68;
+    margin-top: 20px;
+}
+
+.footer-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    width: 210px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28.8px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px 0px #4B5D681A;
+    transition: background-color 0.3s;
+}
+
+.learn-more {
+    background-color: #F063B8;
+    color: #FFFFFF;
+    border: 1px solid #F063B8;
+}
+
+.learn-more:hover {
+    background-color: #EB4BAB;
+}
+
+.request-demo {
+    background-color: #FFFFFF;
+    color: #120c1a;
+    border: 1px solid #9C69E2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.request-demo:hover {
+    background-color: #9C69E2;
+    color: #FFFFFF;
+}
+
+.arrow {
+    width: 20px;
+    height: 14px;
+
+}
+
+.request-demo:hover .arrow {
+    border-color: #FFFFFF;
+}
+
+.footer-section-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 90px; 
+}
+
+.footer-logo-text {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #212353;
+}
+
+.footer-address p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28.8px;
+    color: #212353;
+    margin: 0;
+    margin-bottom: 20px; 
+}
+
+.footer-address p + p {
+    font-weight: 400;
+    color: #4B5D68;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 150px;
+}
+
+.nav-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25.6px;
+    color: #212353;
+    margin-bottom: 20px;
+}
+
+.nav-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-section ul li {
+    margin-bottom: 20px; 
+}
+
+.nav-section ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25.6px;
+    color: #4B5D68;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-section ul li a:hover {
+    color: #8A40EE;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.social-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25.6px;
+    color: #212353;
+    margin-bottom: 20px; 
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+}
+.social-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    perspective: 1000px; 
+}
+.social-icon .icon-front,
+.social-icon .icon-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+}
+
+.social-icon .icon-front {
+    transform: rotateY(0deg);
+}
+
+.social-icon .icon-back {
+    transform: rotateY(180deg);
+}
+
+.social-icon:hover .icon-front {
+    transform: rotateY(-180deg);
+}
+
+.social-icon:hover .icon-back {
+    transform: rotateY(0deg);
+}
+
+
+.footer-bottom-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8px;
+    font-weight: 300;
+    line-height: 21.6px;
+    letter-spacing: 0.01em;
+    color: #212353;
+    margin-top: 5px; 
 }
 
 /* Медиа-запросы для адаптации контейнеров */
