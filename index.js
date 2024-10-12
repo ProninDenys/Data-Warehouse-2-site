@@ -1,4 +1,4 @@
-// Плавная прокрутка для ссылок навигации
+// Smooth scroll for navigation links
 document.querySelectorAll('.nav a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -9,13 +9,13 @@ document.querySelectorAll('.nav a').forEach(anchor => {
     });
 });
 
-// Действие для кнопки "Request Demo"
+// Action for the "Request Demo" button
 const demoButton = document.querySelector('.request-demo');
 demoButton.addEventListener('click', () => {
     alert('Demo request received! Thank you for your interest.');
 });
 
-// Анимация наведения на кнопки "Learn More"
+// Hover animation for "Learn More" buttons
 const learnMoreButtons = document.querySelectorAll('.learn-more-button');
 learnMoreButtons.forEach(button => {
     button.addEventListener('mouseover', () => {
@@ -27,7 +27,7 @@ learnMoreButtons.forEach(button => {
     });
 });
 
-// Анимация переворота иконок социальных сетей
+// Flip animation for social media icons
 const socialIcons = document.querySelectorAll('.social-icon');
 socialIcons.forEach(icon => {
     icon.addEventListener('mouseenter', () => {
@@ -41,9 +41,9 @@ socialIcons.forEach(icon => {
     });
 });
 
-// Анимация элементов при скролле с использованием Intersection Observer
+// Animate elements on scroll using Intersection Observer
 const observerOptions = {
-    threshold: 0.2 // элемент будет анимирован, когда 20% его высоты попадают в зону видимости
+    threshold: 0.2 // element will be animated when 20% of its height enters the viewport
 };
 
 const observerCallback = (entries, observer) => {
