@@ -746,7 +746,6 @@ body {
 }
 
 /* Медиа-запросы для адаптации контейнеров */
-
 /* Планшеты */
 @media screen and (max-width: 768px) {
     .header {
@@ -891,45 +890,46 @@ body {
         margin-bottom: 15px;
     }
 
-        .cards {
-            flex-direction: column;
-            gap: 20px;
-        }
-    
-        .card {
-            width: 100%;
-        }
+    .cards {
+        flex-direction: column;
+        gap: 20px;
+    }
 
-            .footer-section-1 {
-                flex-direction: column;
-                gap: 20px;
-                align-items: center;
-            }
-        
-            .footer-nav {
-                flex-direction: column;
-                gap: 10px;
-            }
-        
-            .footer-nav ul {
-                text-align: center;
-            }
-        
-            .footer-logo-text {
-                text-align: center;
-            }
-        
-            .footer-bottom-text {
-                font-size: 10px;
-                text-align: center;
-            }
+    .card {
+        width: 100%;
+    }
 
-            .social-icon {
-                width: 40px;
-                height: 40px;
-            }
+    .footer {
+        width: 90%; 
+        margin: 0 auto; 
+        padding: 10px; 
+        box-sizing: border-box; 
+    }
 
-            .container, .container-2, .footer {
-                padding: 10px;
-            }
+    .footer-section-1 {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center; 
+    }
+
+    .footer-nav {
+        flex-direction: column; 
+        gap: 10px; 
+        align-items: center; 
+    }
+
+    .footer-logo-text {
+        text-align: center; 
+        margin-bottom: 10px;
+    }
+
+    .footer-bottom-text {
+        font-size: 10px; 
+        text-align: center;
+    }
+
+    .social-icon {
+        width: 40px; 
+        height: 40px;
+    }
 }
